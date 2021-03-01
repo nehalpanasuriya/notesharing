@@ -215,29 +215,29 @@
                     <td>fnm</td>
                     <td>lnm</td>
                     <td>email</td>
-                    <td>password</td>
+                    
                     <td>city</td>
                     <td>state</td>
                     <td>zipcode</td>
-                    <td>Action</td>
+                    <!-- <td>Action</td> -->
 
                     <!-- </tr></table>
                 <table class="table table-success table-hover"> -->
-                    {%for st in user_data%}
+                    {%for st in data%}
                 <tr>
                     <td>{{st.id}}</td>
                     <td>{{st.fname}}</td>
                     <td>{{st.lname}}</td>
                     <td>{{st.email}}</td>
-                    <td>{{st.password}}</td>
+                    <!-- <td>{{st.password}}</td> -->
                     <td>{{st.address}}</td>
                     <td>{{st.city}}</td>
                     <td>{{st.zipcode}}</td>
 
-                    <td>
+                    <!-- <td>
                         <a href="/update/{{st.id}}">Udate</a>
                         <a href="/delete/{{st.id}}">Delete</a>
-                    </td>
+                    </td> -->
                 </tr>
                 {% endfor %}
 

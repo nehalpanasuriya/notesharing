@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Mar 01, 2021 at 01:00 PM
+-- Generation Time: Mar 01, 2021 at 01:23 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -378,7 +378,7 @@ CREATE TABLE IF NOT EXISTS `django_session` (
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
 ('lt3xjbnbccb760ax631511yp3uurtcp5', '.eJxVjMsOgjAUBf-la9O09JHi0r3f0NwXFjUlobAi_ruQsNDtmZmzqQzrUvLaZM4jq6uy6vK7IdBL6gH4CfUxaZrqMo-oD0WftOn7xPK-ne7fQYFW9hq9IeMHcpSsQAB0zqNxgb3xHEKiBAkodtGSEXHU78BiipxiP3Qk6vMF6Zs4HQ:1lGO2g:y34c1y2eFBjqy3FgiN9q38k7-xMoyFh_v1jq7uwwNfA', '2021-03-14 15:31:34.276572'),
 ('du2bd3m8maozstwf5q9kux73zsnmnzr7', '.eJxljEEOwiAQRe_CumlaQCvd6UXIzDCkRKRJATfGu9s2jYlxOe_9eS8BRHNNxT55CT6ws_yAEMWYaozN19bMixiFFI2wUMu0AxvcP0OgO6dNQIwbbo9Gu28OndvrenEqgaCEOd2Or5_UBHlaO8bos3Z46dkMDo3vjdSEoDx0g_MMEr3y3J2ox0ExOYUoJXitDJEyshPvDyEXTvI:1lGOqm:M8eDo_XjvuooizrPI-EDvSn2SbGqNjcm_PVSjeqqlbs', '2021-03-14 16:23:20.971197'),
-('8m57iif2zjc6mzve11hwz9f5ztbztmp4', '.eJxVjEsOwjAMRO-SNYqaDxSzoxeJbMdRI6pUIukKcXca1E2X82bmfVSO6mEuKuDW5rBVeYdOlFUnRsgvKb3AZelYI_O6lab_m6Ou-rknKS0ztryW6XidVDPWefcA-JuPdDcCYyRIBqxnQpdwGGMStJRckuHKhkYnHB2RtZi8A2YHdlDfHxKXPwk:1lGi72:HwH5AyKt0Od0bxp4F0T05MmzWm56aOAOxvv53Kw6hic', '2021-03-15 12:57:24.812454');
+('8m57iif2zjc6mzve11hwz9f5ztbztmp4', '.eJxVjMEOgjAQRP-lZ9PQbRXXm_xIs7vdBiIpiS0n478LhgvHeTPzPmZK5gEXE2ltY1yrvuNODJgTY5KXlr2ged6xJZFlLc3-N0dd7XNLWtok1KalDMfrpBqpjpsHMdxC4rtT7BNjdghBmHymrk9ZCTj7rN1VHPdeJXlmAMrBo4hH6Mz3BxNNPwo:1lGiVm:5AGlBcPkiFldeY1ijoV4Pj60uD7T_NHNndnI-hz3IvA', '2021-03-15 13:22:58.896270');
 
 -- --------------------------------------------------------
 
@@ -547,14 +547,16 @@ CREATE TABLE IF NOT EXISTS `wikipedia_regi` (
   `state` varchar(20) NOT NULL,
   `zipcode` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `wikipedia_regi`
 --
 
 INSERT INTO `wikipedia_regi` (`id`, `fname`, `lname`, `email`, `password`, `address`, `city`, `state`, `zipcode`) VALUES
-(1, 'divya', 'viradiya', 'divuviradiya123@gmail.com', '98765', 'farenidham', 'rajkot', 'gujarat', 36046);
+(1, 'divya', 'viradiya', 'divuviradiya123@gmail.com', '98765', 'farenidham', 'rajkot', 'gujarat', 36046),
+(2, 'nehal', 'panasuriya', 'nehal.pan17@gmail.com', 'neni', 'junagadh', 'junagadh', 'gujarat', 11111),
+(3, 'NEHAL', 'PANASURIYA', 'nehal.pan17@gmail.com', 'nnnnn', 'junagadh', 'junagadh', 'gujarat', 22222);
 
 -- --------------------------------------------------------
 

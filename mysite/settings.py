@@ -23,7 +23,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'm44#8#_su&-(=g70y0fw7s8ci%fh9s8q!_wrtpl9d*upu7qf@%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 # git remote add origin https://github.com/nehalpanasuriya/notesharing.git
@@ -55,7 +55,7 @@ INSTALLED_APPS = [
 # EMAIL_USE_TLS = True
 # EMAIL_PORT = 587
 # EMAIL_HOST_USER = 'pythondjango13@gmail.com' 
-# EMAIL_HOST_PASSWORD = 'nesal1310@django' 
+# EMAIL_HOST_PASSWORD = 'nesal1310?' 
 
 
 

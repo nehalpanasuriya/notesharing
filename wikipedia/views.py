@@ -14,7 +14,7 @@ def index(request):
         if rfrm.is_valid():
             rfrm.save()
             # subject = 'welcome to my django project testing'
-            # message = f'Hi , thank you for registering in geeksforgeeks.'
+            # message = f'Hi , thank you for registering in notesharing site.'
             # email_from = settings.EMAIL_HOST_USER 
             # recipient_list = [rfrm.cleaned_data.get('email')] 
             # send_mail( subject, message, email_from, recipient_list ) 
@@ -79,7 +79,6 @@ def login(request):
             udata=regi.objects.get(email=email)
             user=regi.objects.filter(email=email,password=password)
             if user:
-            
                 request.session['email']=email
                 request.session['id']=udata.id
                 return redirect('/index')
@@ -135,13 +134,13 @@ def viewfeed(request):
 
 def viewregi(request):
     user=request.session.get('email')
-    data={'user_data':regi.objects.all()}
+    data=regi.objects.all()
     return render(request,'viewregi.html',{'data':data,'user':user})
         
 def viewfile(request):
     user=request.session.get('email')
     file_upload=upload.objects.all()
-    return render(request,'viewfile.html',{ 'file_upload':file_upload,'user':user})
+    return render(request,'viewfile.html',{'file_upload':file_upload,'user':user})
 
 def update(request,id):
     if request.method=='POST':
