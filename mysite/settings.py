@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'm44#8#_su&-(=g70y0fw7s8ci%fh9s8q!_wrtpl9d*upu7qf@%'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
-
+ALLOWED_HOSTS = ['*']
+# git remote add origin https://github.com/nehalpanasuriya/notesharing.git
 
 # Application definition
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 28, 2021 at 04:24 PM
+-- Generation Time: Mar 01, 2021 at 01:00 PM
 -- Server version: 5.7.31
 -- PHP Version: 7.3.21
 
@@ -200,7 +200,7 @@ CREATE TABLE IF NOT EXISTS `auth_user` (
 
 INSERT INTO `auth_user` (`id`, `password`, `last_login`, `is_superuser`, `username`, `first_name`, `last_name`, `email`, `is_staff`, `is_active`, `date_joined`) VALUES
 (1, 'pbkdf2_sha256$216000$ZM2a3mGVFb6X$PZojb3UtDCBgyjGWNaHbbjbfTPq/NVF4KTa201sVxSQ=', '2021-02-28 16:05:34.494887', 1, 'admin123', '', '', 'admin@gmail.com', 1, 1, '2021-02-28 15:31:11.947605'),
-(2, '!sxzzB3EbCjXjE0OButx6VwJkbrCUOnufpk815GCj', '2021-02-28 16:23:20.944830', 0, 'python', 'Python', 'Django', '', 0, 1, '2021-02-28 16:23:20.895025');
+(2, '!sxzzB3EbCjXjE0OButx6VwJkbrCUOnufpk815GCj', '2021-03-01 12:57:24.812454', 0, 'python', 'Python', 'Django', '', 0, 1, '2021-02-28 16:23:20.895025');
 
 -- --------------------------------------------------------
 
@@ -377,7 +377,8 @@ CREATE TABLE IF NOT EXISTS `django_session` (
 
 INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES
 ('lt3xjbnbccb760ax631511yp3uurtcp5', '.eJxVjMsOgjAUBf-la9O09JHi0r3f0NwXFjUlobAi_ruQsNDtmZmzqQzrUvLaZM4jq6uy6vK7IdBL6gH4CfUxaZrqMo-oD0WftOn7xPK-ne7fQYFW9hq9IeMHcpSsQAB0zqNxgb3xHEKiBAkodtGSEXHU78BiipxiP3Qk6vMF6Zs4HQ:1lGO2g:y34c1y2eFBjqy3FgiN9q38k7-xMoyFh_v1jq7uwwNfA', '2021-03-14 15:31:34.276572'),
-('du2bd3m8maozstwf5q9kux73zsnmnzr7', '.eJxljEEOwiAQRe_CumlaQCvd6UXIzDCkRKRJATfGu9s2jYlxOe_9eS8BRHNNxT55CT6ws_yAEMWYaozN19bMixiFFI2wUMu0AxvcP0OgO6dNQIwbbo9Gu28OndvrenEqgaCEOd2Or5_UBHlaO8bos3Z46dkMDo3vjdSEoDx0g_MMEr3y3J2ox0ExOYUoJXitDJEyshPvDyEXTvI:1lGOqm:M8eDo_XjvuooizrPI-EDvSn2SbGqNjcm_PVSjeqqlbs', '2021-03-14 16:23:20.971197');
+('du2bd3m8maozstwf5q9kux73zsnmnzr7', '.eJxljEEOwiAQRe_CumlaQCvd6UXIzDCkRKRJATfGu9s2jYlxOe_9eS8BRHNNxT55CT6ws_yAEMWYaozN19bMixiFFI2wUMu0AxvcP0OgO6dNQIwbbo9Gu28OndvrenEqgaCEOd2Or5_UBHlaO8bos3Z46dkMDo3vjdSEoDx0g_MMEr3y3J2ox0ExOYUoJXitDJEyshPvDyEXTvI:1lGOqm:M8eDo_XjvuooizrPI-EDvSn2SbGqNjcm_PVSjeqqlbs', '2021-03-14 16:23:20.971197'),
+('8m57iif2zjc6mzve11hwz9f5ztbztmp4', '.eJxVjEsOwjAMRO-SNYqaDxSzoxeJbMdRI6pUIukKcXca1E2X82bmfVSO6mEuKuDW5rBVeYdOlFUnRsgvKb3AZelYI_O6lab_m6Ou-rknKS0ztryW6XidVDPWefcA-JuPdDcCYyRIBqxnQpdwGGMStJRckuHKhkYnHB2RtZi8A2YHdlDfHxKXPwk:1lGi72:HwH5AyKt0Od0bxp4F0T05MmzWm56aOAOxvv53Kw6hic', '2021-03-15 12:57:24.812454');
 
 -- --------------------------------------------------------
 
@@ -426,7 +427,7 @@ CREATE TABLE IF NOT EXISTS `socialaccount_socialaccount` (
 --
 
 INSERT INTO `socialaccount_socialaccount` (`id`, `provider`, `uid`, `last_login`, `date_joined`, `extra_data`, `user_id`) VALUES
-(1, 'google', '103650828110209932628', '2021-02-28 16:23:20.933112', '2021-02-28 16:23:20.933112', '{\"id\": \"103650828110209932628\", \"name\": \"Python Django\", \"given_name\": \"Python\", \"family_name\": \"Django\", \"picture\": \"https://lh5.googleusercontent.com/-4DUEZlMB5yQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclerwZld468bZqOE-JBWTSHHxLf0g/s96-c/photo.jpg\", \"locale\": \"en-GB\"}', 2);
+(1, 'google', '103650828110209932628', '2021-03-01 12:57:24.781207', '2021-02-28 16:23:20.933112', '{\"id\": \"103650828110209932628\", \"name\": \"Python Django\", \"given_name\": \"Python\", \"family_name\": \"Django\", \"picture\": \"https://lh5.googleusercontent.com/-4DUEZlMB5yQ/AAAAAAAAAAI/AAAAAAAAAAA/AMZuuclerwZld468bZqOE-JBWTSHHxLf0g/s96-c/photo.jpg\", \"locale\": \"en-GB\"}', 2);
 
 -- --------------------------------------------------------
 
@@ -505,7 +506,7 @@ CREATE TABLE IF NOT EXISTS `socialaccount_socialtoken` (
 --
 
 INSERT INTO `socialaccount_socialtoken` (`id`, `token`, `token_secret`, `expires_at`, `account_id`, `app_id`) VALUES
-(1, 'ya29.A0AfH6SMAK8Mp7FS1z3IQAimUDToMBhckaVvVBB5597MmU88VRr1Dmjt4LkOW2a8mKgQfuTvMCIsV5hEuM69nJmNg81wo6V8Ju2fHPUlWaY7hFnEyTR7pqPxLjrQK1ZRZHvtBE1fyK70Qlf8_VZ7jby4pTeNsb', '', '2021-02-28 17:23:19.673351', 1, 3);
+(1, 'ya29.a0AfH6SMDq6Wg1n4mtjkoTltPWLQgGyJiFkqS5eIQxV0Dym36PaTC4XKYooS3mHoonw6eJQ5dzOQ1wsgPVvvCHH1kzhcZH_H-r692EGRrpNnZ3xFuVbJ58L7qcKmhvANTe2rcDaGRyI28bxbDYuSkm6nwRoPuV', '', '2021-03-01 13:57:23.546837', 1, 3);
 
 -- --------------------------------------------------------
 
@@ -519,7 +520,14 @@ CREATE TABLE IF NOT EXISTS `wikipedia_feedback` (
   `email` varchar(50) NOT NULL,
   `feedback` varchar(500) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `wikipedia_feedback`
+--
+
+INSERT INTO `wikipedia_feedback` (`id`, `email`, `feedback`) VALUES
+(1, 'divu123viradiya@gmail.com', 'great...');
 
 -- --------------------------------------------------------
 
@@ -539,7 +547,14 @@ CREATE TABLE IF NOT EXISTS `wikipedia_regi` (
   `state` varchar(20) NOT NULL,
   `zipcode` int(11) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `wikipedia_regi`
+--
+
+INSERT INTO `wikipedia_regi` (`id`, `fname`, `lname`, `email`, `password`, `address`, `city`, `state`, `zipcode`) VALUES
+(1, 'divya', 'viradiya', 'divuviradiya123@gmail.com', '98765', 'farenidham', 'rajkot', 'gujarat', 36046);
 
 -- --------------------------------------------------------
 
@@ -554,14 +569,15 @@ CREATE TABLE IF NOT EXISTS `wikipedia_upload` (
   `comments` varchar(50) NOT NULL,
   `fileupload` varchar(100) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2 DEFAULT CHARSET=latin1;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `wikipedia_upload`
 --
 
 INSERT INTO `wikipedia_upload` (`id`, `title`, `comments`, `fileupload`) VALUES
-(1, 'assignment', 'module 1', 'upload/lap.jpg');
+(1, 'assignment', 'module 1', 'upload/lap.jpg'),
+(2, 'oop consept', 'ch..1 to 5', 'upload/font-awesome.css');
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

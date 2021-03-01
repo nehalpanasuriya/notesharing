@@ -8,7 +8,7 @@ urlpatterns = [
    #path('index/',views.index),
    path('login/',views.login),
   
-   
+   path('aboutus/',views.aboutus),
    path('contact/',views.contact),
    path('feedbackpage/',views.feedbackpage,name='feedbackpage'),
    path('viewregi/',views.viewregi,name='viewregi'),
